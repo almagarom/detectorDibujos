@@ -1,0 +1,80 @@
+/*ADV-C118*/
+/*1111111111111111*/
+/*Comenzamos a agregar estilos a la página*/
+
+body
+{
+  /*color de fondo */
+  background-color:#9fcbe1;
+  /*en caso de querer agregar imagen de fondo*/
+  background-image: url('sketch1.png');
+}
+
+h1
+{
+  /*color del titulo h1*/
+  color:rgb(38, 0, 255);
+  /*fondo del titulo*/
+  background-color: cornsilk;
+}
+
+/*alinear el boton a la derecha*/
+/*#ID del boton*/
+#show_sketch
+{
+  /*Para que se coloque a la derecha de la pantalla*/
+  float:right;
+}
+
+/*Cambiar estilo a la etiqueta p*/
+
+p
+  {
+    /*Agregarle padding arriba*/
+    padding-top:10px;
+    /*Cambiar el tamaño de las letras*/
+    font-size:25px;
+    
+  }
+
+
+
+
+
+
+/*Pasamos a Javascript*/
+
+
+
+
+
+
+/*444444444444444444*/
+/*Agregamos caracteristicas de diseño del canvas*/
+canvas
+  {
+    /*para que su borde sea una línea solida blanca de 5px*/
+    border:5px solid white;
+    /*para que sus bordes sean redondeados*/
+    border-radius:20px;
+    /*Para agregar la animacion*/
+    animation-name: example;
+    /*tiempo de duracion de la animacion de inicio a fin*/
+    animation-duration: 4s;
+    /*para dejar un espacio fuera del margen*/
+    margin-top: 50px; 
+    /*para que la animacion se repita infinitamente*/
+    animation-iteration-count: infinite;
+    
+}
+
+
+/*para agregar las caracteristicas de la animacion ocupamos keyframe*/
+/*keyframe es una palabra clave para definir una animacion*/
+@keyframes example {
+  /*color del borde cuando comienza la animacion*/
+  from {box-shadow: 1px 1px 38px rgb(234, 45, 45);}
+  /*color cuando termine la animacion*/
+  to {box-shadow: 1px 1px 38px rgb(117, 36, 113);}
+
+}
